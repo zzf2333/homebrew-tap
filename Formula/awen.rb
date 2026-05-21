@@ -1,28 +1,31 @@
 class Awen < Formula
   desc "Terminal Intelligence Layer - Smart when you need it, silent when you don't"
   homepage "https://github.com/zzf2333/Awen"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
+
+  depends_on "jq"
+  depends_on "socat"
 
   on_macos do
     on_arm do
-      url "https://github.com/zzf2333/Awen/releases/download/v0.1.0/awen-0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "bb7d37590188a5d3b02de5a5e35b1519a20c4a7faa2b5387d8c7103380481d23"
+      url "https://github.com/zzf2333/Awen/releases/download/v0.1.1/awen-0.1.1-aarch64-apple-darwin.tar.gz"
+      sha256 "cb61654925dd15471c738177ceb2a2c289dacfdbb99d4b4dbe7af7a80a5d5381"
     end
     on_intel do
-      url "https://github.com/zzf2333/Awen/releases/download/v0.1.0/awen-0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "69aeacae9dd7c712a6a89ed9423b00d40a9b12e80cf63560b17fafe9e8756562"
+      url "https://github.com/zzf2333/Awen/releases/download/v0.1.1/awen-0.1.1-x86_64-apple-darwin.tar.gz"
+      sha256 "0e43e9ed74590bf6cb0d25db1c38882f9df2a085215480c986c04c43ab9f721e"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/zzf2333/Awen/releases/download/v0.1.0/awen-0.1.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "952ddede23f3fa7706af730cbd2f1fac5795e3e5d19f8c9458eed6ef8f6ce6d4"
+      url "https://github.com/zzf2333/Awen/releases/download/v0.1.1/awen-0.1.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "a6ca80b29a4e1492c1d3765a5ed70c9b38b3f3633c1e33667d60953b433cede9"
     end
     on_intel do
-      url "https://github.com/zzf2333/Awen/releases/download/v0.1.0/awen-0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "05300f10895f005fcd53882dc46a36af15f567de7908adfdd8125b2a7ecb675b"
+      url "https://github.com/zzf2333/Awen/releases/download/v0.1.1/awen-0.1.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "9c1461269ad725f8e0c8630513947afebe758019e39210cf1274c92f6328f7be"
     end
   end
 
@@ -33,15 +36,7 @@ class Awen < Formula
 
   def caveats
     <<~EOS
-      Add this line to your ~/.zshrc:
-        source #{opt_share}/awen/awen.zsh
-
-      Then restart your shell or run: source ~/.zshrc
-
-      Awen will create ~/.config/awen/ and ~/.local/share/awen/ on first launch.
-
-      Optional dependencies for best performance:
-        brew install jq socat
+      Run "awen setup" to configure your shell, then restart your terminal.
     EOS
   end
 
