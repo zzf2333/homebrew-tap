@@ -1,7 +1,7 @@
 class Awen < Formula
   desc "Terminal Intelligence Layer - Smart when you need it, silent when you don't"
   homepage "https://github.com/zzf2333/Awen"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   depends_on "jq"
@@ -9,23 +9,23 @@ class Awen < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/zzf2333/Awen/releases/download/v0.1.3/awen-0.1.3-aarch64-apple-darwin.tar.gz"
-      sha256 "0f77c201a8c83f1a4293d3167154139f04017f2a34426850e9c96b9d53eaf220"
+      url "https://github.com/zzf2333/Awen/releases/download/v0.1.4/awen-0.1.4-aarch64-apple-darwin.tar.gz"
+      sha256 "fbb1dbd20858226248e51094197dd2443b8bfdec708dd989623831db14e2f18e"
     end
     on_intel do
-      url "https://github.com/zzf2333/Awen/releases/download/v0.1.3/awen-0.1.3-x86_64-apple-darwin.tar.gz"
-      sha256 "f0eecddfd5a675d3e6043e37702f28bc308b0e15701bbc0bf8fba7369519ad49"
+      url "https://github.com/zzf2333/Awen/releases/download/v0.1.4/awen-0.1.4-x86_64-apple-darwin.tar.gz"
+      sha256 "0a3a0939aa57b9a016540084a48d1eee7022d67ad1396eabff0dc581cd65ea5b"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/zzf2333/Awen/releases/download/v0.1.3/awen-0.1.3-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "62ca478577197f59ac57edc0c2de395f7f74b34afc5dd0f784b6e583ce9e8bfd"
+      url "https://github.com/zzf2333/Awen/releases/download/v0.1.4/awen-0.1.4-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "a64c7ccbee532ea4b978c5b5c21b27a13e2bd55b20fbb4cb252a724a0a7ccc28"
     end
     on_intel do
-      url "https://github.com/zzf2333/Awen/releases/download/v0.1.3/awen-0.1.3-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "70e98fbb587a265ce5cd392910e260a7a7e96f48add929987e6c1b8ae2b85e05"
+      url "https://github.com/zzf2333/Awen/releases/download/v0.1.4/awen-0.1.4-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "5da8b33d79ff19204d8f74ef228fb868c48f6d9f762ff1a158d3d9a8bb4a8511"
     end
   end
 
