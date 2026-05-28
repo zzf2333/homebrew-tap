@@ -10,22 +10,22 @@ class Awen < Formula
   on_macos do
     on_arm do
       url "https://github.com/zzf2333/Awen/releases/download/v0.1.5/awen-0.1.5-aarch64-apple-darwin.tar.gz"
-      sha256 "b58d2b16a48e469be173f8f41bbe47a3363639eb0ea289682095931d85d0e07b"
+      sha256 "491dfc0f563764d1d4f475e6cf82985f3c16d3df827c16795f57e60d423a5b13"
     end
     on_intel do
       url "https://github.com/zzf2333/Awen/releases/download/v0.1.5/awen-0.1.5-x86_64-apple-darwin.tar.gz"
-      sha256 "72929beee256064f5bab64b5f6eb26bc2d14c7968a59bc6b82e7009e46d6fc23"
+      sha256 "773da3fdcef4fcbc736204f8a6c7ef1b92f642051827cae5cb7ff8f10d39da9f"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/zzf2333/Awen/releases/download/v0.1.5/awen-0.1.5-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "40bf609ed8a2a754324ab5adbaabe922546235100717b96427a78d5ee8c0d584"
+      sha256 "b9e455c553eea4df0abd01ac6123da6acef9041157bec1768ced2c6cd5037b7e"
     end
     on_intel do
       url "https://github.com/zzf2333/Awen/releases/download/v0.1.5/awen-0.1.5-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "5236d2b157d98c5b8f1314095e3fd5ca3dca6fa2c17aedf295a79ddf4dc38287"
+      sha256 "d657a8dc3491666a7a30101a0a5e155bd1be0c72db4a74e4b513fb29b03ffe98"
     end
   end
 
